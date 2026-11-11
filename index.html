@@ -270,6 +270,7 @@ h2 { font-size: clamp(28px, 3.1vw, 44px); font-weight: 720; line-height: 1.12; l
   .wrap { width: calc(100% - 28px); }
   .site-header { min-height: 58px; justify-content: flex-end; gap: 8px; }
   .site-header .wordmark { margin-right: auto; font-size: 14px; }
+  .wordmark-footer { margin: 0 auto; text-align: center; font-size: 14px; }
   .desktop-nav { display: none; }
   .header-contact { min-height: 34px; padding: 6px 8px; gap: 4px; font-size: 12px; }
   .mobile-menu { display: block; }
@@ -317,7 +318,7 @@ h2 { font-size: clamp(28px, 3.1vw, 44px); font-weight: 720; line-height: 1.12; l
   .timeline-role, .timeline-detail { grid-column: 2; }
   .contact { padding: 16px; gap: 12px; }
   .site-footer { min-height: 0; flex-wrap: wrap; padding-block: 15px; gap: 8px; }
-  .site-footer nav { order: 1; width: 100%; gap: 6px 12px; flex-wrap: wrap; }
+  .site-footer nav { display: none;  }
 }
 @media (max-width: 365px) {
   .hero-content { padding-inline: 12px; }
@@ -1005,7 +1006,7 @@ html.motion-off { scroll-behavior: auto; }
 @media (max-width: 700px) {
   .ambient-contour { display: none; }
   .ambient-grid { background-size: 48px 48px; opacity: .7; }
-  .footer-actions { gap: 14px; }
+  .footer-actions { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
@@ -1535,7 +1536,7 @@ html.intro-pending body {
   </main>
 
   <footer class="site-footer wrap">
-    <a class="wordmark" href="#top" aria-label="sixdeathsix, на главную"><span aria-hidden="true">~/</span>sixdeathsix</a>
+    <a class="wordmark wordmark-footer" href="#top" aria-label="sixdeathsix, на главную"><span aria-hidden="true">~/</span>sixdeathsix</a>
     <nav aria-label="Разделы в футере"><a href="#work">Проекты</a><a href="#skills" lang="en">Skills</a><a href="#ai">ИИ</a><a href="#experience">Опыт</a><a href="#contact">Контакты</a></nav>
     <div class="footer-actions">
       <a class="back-top" href="#top">Наверх <span aria-hidden="true">↑</span></a>
